@@ -298,15 +298,10 @@ Contributions welcome! To improve the tool:
 
 ---
 
-## 📄 License
 
-MIT License - See LICENSE file for details
+## 👤 Author 
 
----
-
-## 👤 Author
-
-AARISH NAIYER
+Aarish Naiyer
 [GitHub](https://github.com/aarish_na) | [LinkedIn](https://linkedin.com/in/aarishna)
 
 *Built to help international students navigate the financial planning process for studying in Canada* 🍁
@@ -315,10 +310,10 @@ AARISH NAIYER
 
 ## 🙏 Acknowledgments
 
-- Cost data sourced from Government of Canada and university websites
+- Cost data sourced from the Government of Canada and university websites
 - Inspired by the challenges faced by international students
 - Built with feedback from current students across Canada
-
+- This is an open-source project
 ---
 
 ## ⚠️ Disclaimer
