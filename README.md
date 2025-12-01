@@ -302,7 +302,7 @@ Contributions welcome! To improve the tool:
 ## 👤 Author 
 
 Aarish Naiyer
-[GitHub]([https://github.com/aarish_na](https://github.com/aarishna/aarishna.git)) | [LinkedIn](https://linkedin.com/in/aarishna)
+[GitHub](https://github.com/aarishna/aarishna.git) | [LinkedIn](https://linkedin.com/in/aarishna)
 
 *Built to help international students navigate the financial planning process for studying in Canada* 🍁
 
