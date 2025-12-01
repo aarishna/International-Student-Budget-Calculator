@@ -306,8 +306,8 @@ MIT License - See LICENSE file for details
 
 ## 👤 Author
 
-**Your Name**  
-[GitHub](https://github.com/yourusername) | [LinkedIn](https://linkedin.com/in/yourprofile)
+AARISH NAIYER
+[GitHub](https://github.com/aarish_na) | [LinkedIn](https://linkedin.com/in/aarishna)
 
 *Built to help international students navigate the financial planning process for studying in Canada* 🍁
 
