@@ -309,7 +309,7 @@ This tool provides estimates only. Actual costs vary based on:
 - Specific program fees
 - Personal circumstances
 
-Always verify current costs with official university sources and the [Government of Canada](https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/prepare/get-documents.html).
+Always verify current costs with official university sources and the Government of Canada
 
 ---
 
