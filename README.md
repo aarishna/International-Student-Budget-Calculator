@@ -165,21 +165,6 @@ Each city includes localized data for groceries, utilities, transportation, and 
 
 ---
 
-## 📸 Screenshots
-
-### Web Interface (Streamlit)
-![Dashboard Overview](screenshots/dashboard.png)  
-*Interactive budget calculator with real-time updates*
-
-![Expense Charts](screenshots/charts.png)  
-*Visual breakdown of monthly and annual costs*
-
-### CLI Interface
-![CLI Demo](screenshots/cli.png)  
-*Terminal-based calculator with guided input*
-
----
-
 ## 🛠️ Technical Details
 
 **Built with:**
