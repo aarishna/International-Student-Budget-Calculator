@@ -123,7 +123,7 @@ python cost_estimator.py
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/canada-student-cost-estimator.git
+git clone https://github.com/aairshna/canada-student-cost-estimator.git
 cd canada-student-cost-estimator
 
 # Install requirements
@@ -201,7 +201,7 @@ Each city includes localized data for groceries, utilities, transportation, and 
 ### Streamlit App
 1. **Select your university** (auto-fills city and base tuition)
 2. **Choose your program/major** (adjusts tuition automatically)
-3. Enter monthly rent and select included utilities
+3. Enter the monthly rent and select included utilities
 4. Add lifestyle expenses (dining, entertainment, etc.)
 5. Choose summer plans (stay, relocate, or go home)
 6. View instant calculations and charts
