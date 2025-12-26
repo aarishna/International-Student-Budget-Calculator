@@ -123,7 +123,7 @@ python cost_estimator.py
 
 ```bash
 # Clone the repository
-git clone https://github.com/aairshna/canada-student-cost-estimator.git
+git clone https://github.com/aarishna/International-Student-Budget-Calculator.git
 cd canada-student-cost-estimator
 
 # Install requirements
