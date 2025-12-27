@@ -7,105 +7,19 @@ import streamlit as st
 import matplotlib.pyplot as plt
 import pandas as pd
 from datetime import datetime
+import requests
 
-# ============================================================================
-# DATA
-# ============================================================================
+S3_BASE_URL = "https://intl-student-budget-data.s3.amazonaws.com"
 
-PROGRAMS = {
-    "Engineering": {"multiplier": 1.4, "emoji": "⚙️"},
-    "Computer Science": {"multiplier": 1.35, "emoji": "💻"},
-    "Business/Commerce": {"multiplier": 1.25, "emoji": "💼"},
-    "Medicine": {"multiplier": 2.0, "emoji": "🩺"},
-    "Dentistry": {"multiplier": 1.8, "emoji": "🦷"},
-    "Law": {"multiplier": 1.5, "emoji": "⚖️"},
-    "Architecture": {"multiplier": 1.3, "emoji": "🏛️"},
-    "Sciences": {"multiplier": 1.1, "emoji": "🔬"},
-    "Mathematics": {"multiplier": 1.0, "emoji": "📊"},
-    "Arts/Humanities": {"multiplier": 0.95, "emoji": "📚"},
-    "Social Sciences": {"multiplier": 0.95, "emoji": "🌍"},
-    "Fine Arts/Design": {"multiplier": 1.0, "emoji": "🎨"},
-    "Nursing": {"multiplier": 1.2, "emoji": "🏥"},
-    "Education": {"multiplier": 0.9, "emoji": "👨‍🏫"},
-    "Psychology": {"multiplier": 1.0, "emoji": "🧠"},
-    "Economics": {"multiplier": 1.15, "emoji": "📈"},
-    "Environmental Studies": {"multiplier": 1.0, "emoji": "🌱"},
-    "Communications": {"multiplier": 1.0, "emoji": "📡"},
-    "Culinary Arts": {"multiplier": 0.85, "emoji": "👨‍🍳"},
-    "Hospitality": {"multiplier": 0.85, "emoji": "🏨"},
-}
+def load_json(name: str):
+    url = f"{S3_BASE_URL}/{name}"
+    response = requests.get(url)
+    response.raise_for_status()
+    return response.json()
 
-CITY_DATA = {
-    "Toronto": {"groceries": 400, "utilities": 150, "transportation": 156, "internet_phone": 80},
-    "Vancouver": {"groceries": 420, "utilities": 130, "transportation": 136, "internet_phone": 75},
-    "Montreal": {"groceries": 350, "utilities": 120, "transportation": 94, "internet_phone": 70},
-    "Ottawa": {"groceries": 380, "utilities": 140, "transportation": 122, "internet_phone": 75},
-    "Calgary": {"groceries": 390, "utilities": 160, "transportation": 112, "internet_phone": 80},
-    "Edmonton": {"groceries": 370, "utilities": 155, "transportation": 103, "internet_phone": 75},
-    "Waterloo": {"groceries": 370, "utilities": 145, "transportation": 100, "internet_phone": 75},
-    "Guelph": {"groceries": 365, "utilities": 140, "transportation": 95, "internet_phone": 75},
-    "Quebec City": {"groceries": 340, "utilities": 115, "transportation": 90, "internet_phone": 70},
-    "Winnipeg": {"groceries": 360, "utilities": 145, "transportation": 105, "internet_phone": 70},
-    "Halifax": {"groceries": 385, "utilities": 135, "transportation": 82, "internet_phone": 75}
-}
-
-UNIVERSITIES = {
-    # Toronto (4)
-    "University of Toronto": {"city": "Toronto", "tuition": 58160},
-    "York University": {"city": "Toronto", "tuition": 35000},
-    "Toronto Metropolitan University": {"city": "Toronto", "tuition": 33000},
-    "OCAD University": {"city": "Toronto", "tuition": 27000},
-    
-    # Vancouver (3)
-    "UBC": {"city": "Vancouver", "tuition": 51000},
-    "Simon Fraser University": {"city": "Vancouver", "tuition": 32000},
-    "Emily Carr University": {"city": "Vancouver", "tuition": 24000},
-    
-    # Montreal (3)
-    "McGill University": {"city": "Montreal", "tuition": 48000},
-    "Concordia University": {"city": "Montreal", "tuition": 29000},
-    "Université de Montréal": {"city": "Montreal", "tuition": 27000},
-    
-    # Ottawa (3)
-    "University of Ottawa": {"city": "Ottawa", "tuition": 45000},
-    "Carleton University": {"city": "Ottawa", "tuition": 33000},
-    "Algonquin College": {"city": "Ottawa", "tuition": 16000},
-    
-    # Calgary (3)
-    "University of Calgary": {"city": "Calgary", "tuition": 32000},
-    "Mount Royal University": {"city": "Calgary", "tuition": 21000},
-    "SAIT Polytechnic": {"city": "Calgary", "tuition": 18000},
-    
-    # Edmonton (3)
-    "University of Alberta": {"city": "Edmonton", "tuition": 31000},
-    "MacEwan University": {"city": "Edmonton", "tuition": 20000},
-    "NAIT": {"city": "Edmonton", "tuition": 17000},
-    
-    # Waterloo (3)
-    "University of Waterloo": {"city": "Waterloo", "tuition": 53000},
-    "Wilfrid Laurier University": {"city": "Waterloo", "tuition": 28000},
-    "Conestoga College": {"city": "Waterloo", "tuition": 16000},
-    
-    # Guelph (1)
-    "University of Guelph": {"city": "Guelph", "tuition": 31000},
-    
-    # Quebec City (2)
-    "Université Laval": {"city": "Quebec City", "tuition": 26000},
-    "Collège Mérici": {"city": "Quebec City", "tuition": 14000},
-    
-    # Winnipeg (3)
-    "University of Manitoba": {"city": "Winnipeg", "tuition": 19000},
-    "University of Winnipeg": {"city": "Winnipeg", "tuition": 17000},
-    "Red River College": {"city": "Winnipeg", "tuition": 15000},
-    
-    # Halifax (3)
-    "Dalhousie University": {"city": "Halifax", "tuition": 28000},
-    "Saint Mary's University": {"city": "Halifax", "tuition": 21000},
-    "NSCAD University": {"city": "Halifax", "tuition": 19000},
-    
-    "Custom/Other": {"city": None, "tuition": 0}
-}
-
+PROGRAMS = load_json("programs.json")
+CITY_DATA = load_json("city_data.json")
+UNIVERSITIES = load_json("universities.json")
 # ============================================================================
 # CONFIG
 # ============================================================================
