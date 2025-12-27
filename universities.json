@@ -1,0 +1,48 @@
+{
+    
+    "University of Toronto": {"city": "Toronto", "tuition": 58160},
+    "York University": {"city": "Toronto", "tuition": 35000},
+    "Toronto Metropolitan University": {"city": "Toronto", "tuition": 33000},
+    "OCAD University": {"city": "Toronto", "tuition": 27000},
+    
+    
+    "UBC": {"city": "Vancouver", "tuition": 51000},
+    "Simon Fraser University": {"city": "Vancouver", "tuition": 32000},
+    "Emily Carr University": {"city": "Vancouver", "tuition": 24000},
+    
+    
+    "McGill University": {"city": "Montreal", "tuition": 48000},
+    "Concordia University": {"city": "Montreal", "tuition": 29000},
+    "Université de Montréal": {"city": "Montreal", "tuition": 27000},
+    
+    "University of Ottawa": {"city": "Ottawa", "tuition": 45000},
+    "Carleton University": {"city": "Ottawa", "tuition": 33000},
+    "Algonquin College": {"city": "Ottawa", "tuition": 16000},
+    
+    "University of Calgary": {"city": "Calgary", "tuition": 32000},
+    "Mount Royal University": {"city": "Calgary", "tuition": 21000},
+    "SAIT Polytechnic": {"city": "Calgary", "tuition": 18000},
+    
+    "University of Alberta": {"city": "Edmonton", "tuition": 31000},
+    "MacEwan University": {"city": "Edmonton", "tuition": 20000},
+    "NAIT": {"city": "Edmonton", "tuition": 17000},
+    
+    "University of Waterloo": {"city": "Waterloo", "tuition": 53000},
+    "Wilfrid Laurier University": {"city": "Waterloo", "tuition": 28000},
+    "Conestoga College": {"city": "Waterloo", "tuition": 16000},
+    
+    "University of Guelph": {"city": "Guelph", "tuition": 31000},
+    
+    "Université Laval": {"city": "Quebec City", "tuition": 26000},
+    "Collège Mérici": {"city": "Quebec City", "tuition": 14000},
+    
+    "University of Manitoba": {"city": "Winnipeg", "tuition": 19000},
+    "University of Winnipeg": {"city": "Winnipeg", "tuition": 17000},
+    "Red River College": {"city": "Winnipeg", "tuition": 15000},
+    
+    "Dalhousie University": {"city": "Halifax", "tuition": 28000},
+    "Saint Mary's University": {"city": "Halifax", "tuition": 21000},
+    "NSCAD University": {"city": "Halifax", "tuition": 19000},
+    
+    "Custom/Other": {"city": null, "tuition": 0}
+}

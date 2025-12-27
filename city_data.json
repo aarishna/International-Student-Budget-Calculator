@@ -1,0 +1,13 @@
+{
+    "Toronto": {"groceries": 400, "utilities": 150, "transportation": 156, "internet_phone": 80},
+    "Vancouver": {"groceries": 420, "utilities": 130, "transportation": 136, "internet_phone": 75},
+    "Montreal": {"groceries": 350, "utilities": 120, "transportation": 94, "internet_phone": 70},
+    "Ottawa": {"groceries": 380, "utilities": 140, "transportation": 122, "internet_phone": 75},
+    "Calgary": {"groceries": 390, "utilities": 160, "transportation": 112, "internet_phone": 80},
+    "Edmonton": {"groceries": 370, "utilities": 155, "transportation": 103, "internet_phone": 75},
+    "Waterloo": {"groceries": 370, "utilities": 145, "transportation": 100, "internet_phone": 75},
+    "Guelph": {"groceries": 365, "utilities": 140, "transportation": 95, "internet_phone": 75},
+    "Quebec City": {"groceries": 340, "utilities": 115, "transportation": 90, "internet_phone": 70},
+    "Winnipeg": {"groceries": 360, "utilities": 145, "transportation": 105, "internet_phone": 70},
+    "Halifax": {"groceries": 385, "utilities": 135, "transportation": 82, "internet_phone": 75}
+}
