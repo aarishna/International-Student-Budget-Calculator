@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 streamlit>=1.28.0
 pandas>=2.0.0
 matplotlib>=3.7.0
 requests>=2.30.0
+=======
+streamlit>=1.28.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+requests>=2.30.0
+>>>>>>> bd36959fd6072e8a60cfcfc48dfc8e8cfb6f0485
