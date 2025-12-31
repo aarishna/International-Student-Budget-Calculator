@@ -24,6 +24,8 @@ Helps international students:
 - Enables updates without redeploying the application
 - Centralized, scalable, production-style data storage
 
+---
+
 ### 🎓 Program-Specific Tuition
 20 major programs with realistic tuition adjustments:
 - STEM: Engineering (1.4x), Computer Science (1.35x), Sciences (1.1x)
@@ -35,12 +37,16 @@ Helps international students:
 
 Multipliers based on typical international student tuition variations.
 
+---
+
 ### 📊 Comprehensive Expense Tracking
 - Housing: Rent, utilities, internet
 - Transportation: Public transit or free university passes
 - Food: Groceries and dining out
 - Lifestyle: Entertainment, social activities, shopping
 - Summer Planning: Stay, relocate, or return home
+
+  ---
 
 ### 🎓 University Database
 30+ institutions across Canada with international tuition data loaded dynamically.
