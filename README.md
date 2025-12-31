@@ -45,38 +45,38 @@ Multipliers based on typical international student tuition variations.
 ### 🎓 University Database
 30+ institutions across Canada with international tuition data loaded dynamically.
 
-# Toronto:
+#### Toronto:
 - University of Toronto ($58k)
 - York University ($35k)
 - Toronto Metropolitan University ($33k)
 - OCAD University ($27k)
 
-# Vancouver:
+#### Vancouver:
 - UBC ($51k)
 - Simon Fraser University ($32k)
 - Emily Carr University ($24k)
 
-# Montreal:
+#### Montreal:
 - McGill University ($48k)
 - Concordia University ($29k)
 - Université de Montréal ($27k)
 
-# Ottawa:
+#### Ottawa:
 - University of Ottawa ($45k)
 - Carleton University ($33k)
 - Algonquin College ($16k)
 
-# Calgary:
+#### Calgary:
 - University of Calgary ($32k)
 - Mount Royal University ($21k)
 - SAIT Polytechnic ($18k)
 
-# Edmonton:
+#### Edmonton:
 - University of Alberta ($31k)
 - MacEwan University ($20k)
 - NAIT ($17k)
 
-# Waterloo:
+#### Waterloo:
 - University of Waterloo ($53k)
 - Wilfrid Laurier University ($28k)
 - Conestoga College ($16k)
@@ -99,12 +99,12 @@ Custom university option available.
 
 ## 🚀 How to Run
 
-# Web App (Streamlit):
+### Web App (Streamlit):
 1. Install dependencies: pip install streamlit matplotlib pandas requests
 2. Run the app: streamlit run app.py
 3. Open http://localhost:8501
 
-# CLI Version:
+### CLI Version:
 1. Install dependencies: pip install matplotlib pandas requests
 2. Run the script: python cost_estimator.py
 
@@ -121,7 +121,7 @@ Custom university option available.
 4. Run the application:
    streamlit run app.py
 
-# Requirements:
+### Requirements:
 - streamlit >= 1.28.0
 - matplotlib >= 3.7.0
 - pandas >= 2.0.0
@@ -149,14 +149,14 @@ Estimates include rent, groceries, utilities, and transportation.
 
 ## 🛠️ Technical Details
 
-# Built with:
+### Built with:
 - Python 3.8+
 - Streamlit
 - Pandas
 - Matplotlib
 - Amazon S3 (cloud data source)
 
-# Design highlights:
+### Design highlights:
 - No hardcoded datasets
 - Cloud-driven configuration
 - Modular and DRY architecture
