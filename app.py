@@ -1,6 +1,7 @@
 """
+
 Streamlit Web Application for International Student Cost Estimator
-Run with: streamlit run app.py
+
 """
 
 import streamlit as st
@@ -11,15 +12,19 @@ import requests
 
 S3_BASE_URL = "https://intl-student-budget-data.s3.amazonaws.com"
 
+@st.cache_data(show_spinner=False)
 def load_json(name: str):
     url = f"{S3_BASE_URL}/{name}"
-    response = requests.get(url)
+    response = requests.get(url, timeout=5)
     response.raise_for_status()
     return response.json()
-
-PROGRAMS = load_json("programs.json")
-CITY_DATA = load_json("city_data.json")
-UNIVERSITIES = load_json("universities.json")
+try:
+    PROGRAMS = load_json("programs.json")
+    CITY_DATA = load_json("city_data.json")
+    UNIVERSITIES = load_json("universities.json")
+except requests.RequestException:
+    st.error("Unable to load budget data. Please try again later.")
+    st.stop()
 # ============================================================================
 # CONFIG
 # ============================================================================
