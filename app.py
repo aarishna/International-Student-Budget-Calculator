@@ -5,6 +5,8 @@ Streamlit Web Application for International Student Cost Estimator
 """
 
 import streamlit as st
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
 from datetime import datetime
