@@ -192,6 +192,8 @@ Custom university option available.
 - matplotlib >= 3.7.0
 - pandas >= 2.0.0
 - requests >= 2.30.0
+
+  
 1. Clone the repository  
    `git clone https://github.com/aarishna/International-Student-Budget-Calculator.git`
 2. Navigate to the directory  
@@ -200,12 +202,6 @@ Custom university option available.
    `pip install -r requirements.txt`
 4. Run the app  
    `streamlit run app.py`
-
-**Requirements**
-- streamlit ≥ 1.28.0
-- matplotlib ≥ 3.7.0
-- pandas ≥ 2.0.0
-- requests ≥ 2.30.0
 
 ---
 
@@ -235,7 +231,6 @@ Halifax: $2,100–$2,600
 - **Halifax:** $2,100–$2,600
 
 Estimates include rent, groceries, utilities, and transportation.
-*Estimates include rent, groceries, utilities, and transportation.*
 
 ---
 
@@ -258,7 +253,7 @@ Estimates include rent, groceries, utilities, and transportation.
 - Graceful error handling
 - Resume-grade project structure
 
-@@ -174,12 +194,13 @@ Estimates include rent, groceries, utilities, and transportation.
+Estimates include rent, groceries, utilities, and transportation.
 ## 🎓 For Students
 
 This tool helps you:
@@ -269,11 +264,10 @@ This tool helps you:
 - Prepare financial documentation for visa applications
 
 All values are estimates and may vary.
-*All values are estimates and may vary.*
 
 ---
 
-@@ -195,7 +216,7 @@ All values are estimates and may vary.
+
 
 ## 👤 Author
 
