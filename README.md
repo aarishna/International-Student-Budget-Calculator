@@ -213,7 +213,9 @@ LinkedIn: [linkedin.com/in/aarishna](https://linkedin.com/in/aarishna)
 
 ## ⚠️ Disclaimer
 
-This tool provides estimates only. Actual costs vary based on lifestyle, inflation, and personal circumstances. Always verify with official university sources and government resources.
+- This tool provides estimates only.
+- Actual costs vary based on lifestyle, inflation, and personal circumstances. 
+- Always verify with official university sources and government resources.
 
 ---
 
