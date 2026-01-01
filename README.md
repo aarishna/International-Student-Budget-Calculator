@@ -203,11 +203,11 @@ This tool helps you:
 
 ---
 
-## 👤 Author
+## 👤 Author  -  **Aarish Naiyer**  
 
-**Aarish Naiyer**  
-GitHub: [github.com/aarishna](https://github.com/aarishna)  
-LinkedIn: [linkedin.com/in/aarishna](https://linkedin.com/in/aarishna)
+
+- GitHub: [github.com/aarishna](https://github.com/aarishna)
+- LinkedIn: [linkedin.com/in/aarishna](https://linkedin.com/in/aarishna)
 
 ---
 
