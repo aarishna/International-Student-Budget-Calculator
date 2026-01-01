@@ -2,6 +2,8 @@
 
 A comprehensive cost-of-living calculator for international students planning to study in Canada. Provides detailed expense breakdowns, multi-city comparisons, and budget visualization tools using cloud-hosted data.
 
+**🌐 Live Demo:** [https://intlstudentbudget.streamlit.app](https://intlstudentbudget.streamlit.app)
+
 ---
 
 ## 🎯 Purpose
@@ -182,12 +184,16 @@ Other supported cities include **Guelph, Quebec City, Winnipeg, Halifax**, and m
 - Matplotlib
 - Amazon S3 (cloud data source)
 
+**Architecture**
+- Streamlit frontend → Amazon S3 JSON data source → Client-side visualization
+
 **Design Highlights**
 - No hardcoded datasets
 - Cloud-driven configuration
 - Modular, DRY architecture
 - Graceful error handling
 - Resume-grade project structure
+- Deployed as a public web application using Streamlit Cloud
 
 ---
 
@@ -203,19 +209,17 @@ This tool helps you:
 
 ---
 
-## 👤 Author  -  **Aarish Naiyer**  
+## 👤 Author
 
-
-- GitHub: [github.com/aarishna](https://github.com/aarishna)
-- LinkedIn: [linkedin.com/in/aarishna](https://linkedin.com/in/aarishna)
+### Aarish Naiyer  
+GitHub: [github.com/aarishna](https://github.com/aarishna)  
+LinkedIn: [linkedin.com/in/aarishna](https://linkedin.com/in/aarishna)
 
 ---
 
 ## ⚠️ Disclaimer
 
-- This tool provides estimates only.
-- Actual costs vary based on lifestyle, inflation, and personal circumstances. 
-- Always verify with official university sources and government resources.
+This tool provides estimates only. Actual costs vary based on lifestyle, inflation, and personal circumstances. Always verify with official university sources and government resources.
 
 ---
 
