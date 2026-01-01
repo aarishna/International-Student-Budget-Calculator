@@ -1,14 +1,12 @@
 # 🍁 Canada Student Cost Estimator
 
-A comprehensive cost-of-living calculator for international students planning to study in Canada.  
-Provides detailed expense breakdowns, multi-city comparisons, and budget visualization tools using cloud-hosted data.
+A comprehensive cost-of-living calculator for international students planning to study in Canada. Provides detailed expense breakdowns, multi-city comparisons, and budget visualization tools using cloud-hosted data.
 
 ---
 
 ## 🎯 Purpose
 
-This tool helps international students:
-
+Helps international students:
 - **Estimate** total annual costs (tuition + living expenses)
 - **Compare** tuition across 20+ programs and 30+ universities
 - **Plan** budgets for different lifestyle choices
@@ -21,17 +19,13 @@ This tool helps international students:
 ## ✨ Features
 
 ### ☁️ Dynamic Cloud Data (Amazon S3)
-
 - University, program, and city cost data fetched dynamically from Amazon S3
-- No hardcoded datasets
-- Updates can be made without redeploying the application
+- Eliminates hardcoded datasets
+- Enables updates without redeploying the application
 - Centralized, scalable, production-style data storage
 
----
-
 ### 🎓 Program-Specific Tuition
-
-Supports **20 major programs** with realistic international tuition multipliers:
+**20 major programs** with realistic tuition adjustments:
 
 - **STEM:** Engineering (1.4x), Computer Science (1.35x), Sciences (1.1x)
 - **Health:** Medicine (2.0x), Dentistry (1.8x), Nursing (1.2x)
@@ -42,21 +36,15 @@ Supports **20 major programs** with realistic international tuition multipliers:
 
 *Multipliers based on typical international student tuition variations.*
 
----
-
 ### 📊 Comprehensive Expense Tracking
-
 - **Housing:** Rent, utilities, internet
 - **Transportation:** Public transit or free university passes
 - **Food:** Groceries and dining out
 - **Lifestyle:** Entertainment, social activities, shopping
 - **Summer Planning:** Stay, relocate, or return home
 
----
-
 ### 🎓 University Database
-
-Supports **30+ institutions** across Canada with international tuition data loaded dynamically.
+**30+ institutions** across Canada with international tuition data loaded dynamically.
 
 **Toronto**
 - University of Toronto ($58k)
@@ -98,18 +86,12 @@ Other supported cities include **Guelph, Quebec City, Winnipeg, Halifax**, and m
 
 *Custom university option available.*
 
----
-
 ### 📈 Visual Analytics
-
 - Monthly expense breakdown (pie charts)
 - Annual cost distribution (bar charts)
 - Multi-period expense visualization
 
----
-
 ### 💾 Export Options
-
 - CSV budget reports
 - Timestamped exports
 - Easy sharing with family and advisors
@@ -120,6 +102,119 @@ Other supported cities include **Guelph, Quebec City, Winnipeg, Halifax**, and m
 
 ### Web App (Streamlit)
 
-```bash
-pip install streamlit matplotlib pandas requests
-streamlit run app.py
+1. Install dependencies  
+   ```bash
+   pip install streamlit matplotlib pandas requests
+   ```
+2. Run the app  
+   ```bash
+   streamlit run app.py
+   ```
+3. Open in browser  
+   ```
+   http://localhost:8501
+   ```
+
+### CLI Version
+
+1. Install dependencies  
+   ```bash
+   pip install matplotlib pandas requests
+   ```
+2. Run the script  
+   ```bash
+   python cost_estimator.py
+   ```
+
+---
+
+## 📦 Installation
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/aarishna/International-Student-Budget-Calculator.git
+   ```
+2. Navigate to the directory  
+   ```bash
+   cd canada-student-cost-estimator
+   ```
+3. Install requirements  
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run the app  
+   ```bash
+   streamlit run app.py
+   ```
+
+### Requirements
+- streamlit >= 1.28.0
+- matplotlib >= 3.7.0
+- pandas >= 2.0.0
+- requests >= 2.30.0
+
+---
+
+## 🏙️ Supported Cities & Monthly Cost Ranges
+
+- **Toronto:** $2,500–$3,000
+- **Vancouver:** $2,400–$2,900
+- **Montreal:** $2,100–$2,600
+- **Ottawa:** $2,200–$2,700
+- **Calgary:** $2,300–$2,800
+- **Edmonton:** $2,200–$2,700
+- **Waterloo:** $2,200–$2,700
+- **Guelph:** $2,100–$2,600
+- **Quebec City:** $1,900–$2,400
+- **Winnipeg:** $2,000–$2,500
+- **Halifax:** $2,100–$2,600
+
+*Estimates include rent, groceries, utilities, and transportation.*
+
+---
+
+## 🛠️ Technical Details
+
+**Built with**
+- Python 3.8+
+- Streamlit
+- Pandas
+- Matplotlib
+- Amazon S3 (cloud data source)
+
+**Design Highlights**
+- No hardcoded datasets
+- Cloud-driven configuration
+- Modular, DRY architecture
+- Graceful error handling
+- Resume-grade project structure
+
+---
+
+## 🎓 For Students
+
+This tool helps you:
+- Budget realistically before arriving in Canada
+- Avoid financial surprises
+- Compare cities and programs confidently
+- Prepare financial documentation for visa applications
+
+*All values are estimates and may vary.*
+
+---
+
+## 👤 Author
+
+**Aarish Naiyer**  
+GitHub: [github.com/aarishna](https://github.com/aarishna)  
+LinkedIn: [linkedin.com/in/aarishna](https://linkedin.com/in/aarishna)
+
+---
+
+## ⚠️ Disclaimer
+
+This tool provides estimates only. Actual costs vary based on lifestyle, inflation, and personal circumstances. Always verify with official university sources and government resources.
+
+---
+
+**Made with ❤️ for international students coming to Canada**
